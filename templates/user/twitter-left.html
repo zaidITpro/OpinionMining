@@ -1,0 +1,19 @@
+ {% for element_list in tweets %}
+    {% for j in element_list.statuses %}
+
+
+ 
+       <h4 style="margin-top:40px;">
+             <a href="http://twitter.com/{{ j.user.screen_name }}/status/{{ j.id }}" target="_blank" title="{{ j.text }}">{{ j.text }}</a>
+       </h4>
+       <div class="description"></div>
+       <div class="info"><p>
+            <a href="http://twitter.com/{{ j.user.screen_name }}/status/{{ j.id }}" target="_blank" class="link">twitter.com/{{ j.user.screen_name }}/status/{{ j.id }}
+            </a>
+            <br /><b>Created at:</b> {{ j.created_at }}
+            <img src="{{ j.user.profile_image_url_https }}" class="user_image" /> {{ j.user.screen_name }}
+             <a href="http://twitter.com">&nbsp;twitter</a></p>
+            
+       </div>
+    {% endfor %}
+{% endfor %}

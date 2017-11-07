@@ -1,0 +1,9 @@
+{% csrf_token %}
+
+ {% if user.is_authenticated %}
+        Welcome {{user.username}}, you are loged in..
+    {% else %}
+        You are not logged in
+    {% endif %}
+
+ <a href="{% url 'logout_view' %}">logout now</a>

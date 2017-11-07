@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+             <form name="search_form" method="post" action="{% url 'user' %}">{% csrf_token %}
+                    {% if error %}
+                           <div class="alert alert-danger">{{error}}</div>
+                    {% endif %}
+
+                    <div class="input-group input-group-lg">
+                       
+                       {{ search_form.search_query }}
+                       <span class="input-group-addon" id="sizing-addon1">
+                                    <span class="glyphicon glyphicon-search"></span> Search
+                       </span>
+                       
+                    </div>
+            </form>
+            </div>
+        </div>
+	</div>
+</div>

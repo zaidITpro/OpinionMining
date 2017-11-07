@@ -1,0 +1,47 @@
+                    <div class="col-lg-4">
+                        <div class="panel panel-primary" style="min-height:300px;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-reddit"></i>&nbsp; reddit statistics</h3>
+                            </div>
+                            <div class="panel-body">
+                              
+                                <div class="panel panel-primary">
+                                      <div class="panel-heading">
+                                              <div class="row">
+                                                 <div class="col-xs-3">
+                                                 <i class="fa fa-reddit"></i>
+                                                 </div>
+                                               <div class="col-xs-9 text-right">
+                                               <div class="huge">{{ reddit_data.up_vote }}</div>
+                                               <div>Up Votes</div>
+                                              </div>
+                                       </div>
+                                 </div>
+                                </div>
+                               
+                                <div class="panel panel-red">
+                                      <div class="panel-heading">
+                                              <div class="row">
+                                                 <div class="col-xs-3">
+                                                 <i class="fa love-btn-emo fa-love-o-up"></i>
+                                                 </div>
+                                               <div class="col-xs-9 text-right">
+                                               <div class="huge">{{ reddit_data.num_comments }}</div>
+                                               <div>Comments</div>
+                                              </div>
+                                       </div>
+                              
+                                 </div>
+                     
+
+                               
+
+
+                          </div>
+
+                                <div class="text-right">
+                                    <a href="{% url 'reddit_detailed_analysis' %}">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

@@ -1,0 +1,22 @@
+ {% for element_list in reddit %}
+
+    <div class="row">
+      <div class="span4"> <img src="{{ element_list.thumbnail }}" width="100" 
+                               height="100" style="float:left; margin-right:20px;"/> 
+         <h5 style="margin-top:40px; font-size:16px; width:600px;">
+             <a href="https://reddit.com/{{ element_list.permalink }}" target="_blank" title="{{ element_list.title }}">{{ element_list.title }}</a>
+       </h5>
+  
+       <div class="description"><a href="https://reddit.com/{{ element_list.permalink }}"><b>{{ element_list.num_comments }} comments</b>
+                              </a>submited by <b>{{ element_list.author }}</b>
+                              <br />
+
+            <a href="https://reddit.com/{{ element_list.url }}" target="_blank" class="link" style="color:#539D36;"> {{ element_list.url }}
+            </a>
+
+      </div>
+    </div>
+    </div>
+    
+    
+{% endfor %}
