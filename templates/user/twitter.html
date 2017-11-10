@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Twitter Analysis</title>
+    <title>PROJECT</title>
     <!-- Bootstrap Core CSS -->
     {% load static %}
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -25,6 +25,7 @@
     <link href="{% static 'user/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <!-- Searchbox css-->
     <link href="{% static 'user/css/search-box.css' %}" rel="stylesheet">
+    <script src="https://unpkg.com/frappe-charts@0.0.3/dist/frappe-charts.min.iife.js" />    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"/></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -159,6 +160,9 @@ clearfix{display:block}
   font-size:0.9em;
   margin-bottom:0.5em;
 }
+#sentimentchart .graph-stats-container{
+  display: -webkit-box !important;
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -192,7 +196,7 @@ $(document).ready(function(){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">OpinionMining</a>
+                <a class="navbar-brand" href="index.html">PROJECT</a>
             </div>
 
             <!-- Top Menu Items -->
