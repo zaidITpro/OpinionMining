@@ -25,6 +25,7 @@
     <link href="{% static 'user/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <!-- Searchbox css-->
     <link href="{% static 'user/css/search-box.css' %}" rel="stylesheet">
+    <script src="https://unpkg.com/frappe-charts@0.0.3/dist/frappe-charts.min.iife.js" />    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"/></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,7 +38,7 @@
 <style>
 
 #reddit-left{
-     width:70%;
+     width:80%;
      min-height:100%;
      box-sizing: border-box;
      margin-top:10px;
@@ -46,7 +47,8 @@
 }
 #reddit-right{
      clear:none;
-     width:30%;
+     width:20%;
+     display:block;
      min-height:100%;
      box-sizing: border-box;
      margin-top:50px;
@@ -165,6 +167,9 @@ clearfix{display:block}
 .box p{
   font-size:0.9em;
   margin-bottom:0.5em;
+}
+#sentimentchart .graph-stats-container{
+  display: -webkit-box !important;
 }
 </style>
 <script>

@@ -1,3 +1,8 @@
+<!-- <div>{{dayOfWeek}}</div>
+<div>{{whenCreated}}</div> -->
+<div id="pchart"></div>
+<div id="cchart"></div>
+<div id="chart"></div>
  {% for element_list in reddit %}
 
     <div class="row">
@@ -20,3 +25,64 @@
     
     
 {% endfor %}
+<script type="text/javascript"> 
+
+  var a = JSON.parse("{{whenCreated}}".replace(/&#39;/g,`"`))
+  var dates_a={}
+  Object.keys(a).forEach(function(x){
+    dates_a[new Date(x).getTime()/1000]=a[x]
+  })
+  let data = {
+    labels: Object.keys(a),
+    datasets: [
+      {
+        title: "Created today", color: "light-blue",
+        values: Object.values(a)
+      }
+    ]
+  };
+  let chart = new Chart({
+    parent: "#chart", // or DOM element
+    title: "Tweets per day",
+    data: dates_a,
+    type: 'heatmap', // or 'line', 'scatter', 'pie', 'percentage'
+    height: 250
+  });
+
+  var b = JSON.parse("{{dayOfWeek}}".replace(/&#39;/g,`"`))
+  let bdata = {
+    labels: Object.keys(b),
+    datasets: [
+      {
+        title: "Created today", color: "light-blue",
+        values: Object.values(b)
+      }
+    ]
+  };
+  let bchart = new Chart({
+    parent: "#pchart", // or DOM element
+    title: "Reddit posts in a week",
+    data: bdata,
+    type: 'percentage', // or 'line', 'scatter', 'pie', 'percentage'
+    height: 250
+  });
+
+  var c = JSON.parse("{{dayOfWeek}}".replace(/&#39;/g,`"`))
+  let cdata = {
+    labels: Object.keys(b),
+    datasets: [
+      {
+        title: "Created today", color: "light-blue",
+        values: Object.values(b)
+      }
+    ]
+  };
+  let cchart = new Chart({
+    parent: "#cchart", // or DOM element
+    title: "Reddit posts in a week",
+    data: cdata,
+    type: 'line', // or 'line', 'scatter', 'pie', 'percentage'
+    height: 250
+  });
+ 
+</script>
