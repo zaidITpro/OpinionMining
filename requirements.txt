@@ -94,7 +94,7 @@ Twisted==17.5.0
 twython==3.6.0
 update-checker==0.16
 uritemplate==3.0.0
-urllib3==1.21.1
+urllib3==1.26.5
 virtualenv==15.1.0
 virtualenvwrapper-win==1.2.1
 w3lib==1.18.0
