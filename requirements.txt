@@ -14,7 +14,7 @@ cssselect==1.0.1
 cycler==0.10.0
 Cython==0.27.1
 decorator==4.1.2
-Django==1.11.5
+Django==2.2.24
 facebook-sdk==2.0.0
 facepy==1.0.9
 feedfinder2==0.0.4
