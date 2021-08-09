@@ -65,7 +65,7 @@ python-dateutil==2.6.1
 pythran==0.8.3
 pyttsx3==2.6
 pytz==2017.2
-pywin32==220
+pywin32==301
 PyYAML==3.12
 Quandl==3.2.0
 query-string==0.0.12
