@@ -77,7 +77,7 @@ requests-oauthlib==0.8.0
 rsa==3.4.2
 scikit-learn==0.19.0
 scipy==0.19.1
-Scrapy==1.4.0
+Scrapy==1.8.1
 scrapy-djangoitem==1.1.1
 scrapyd==1.2.0
 selenium==3.5.0
