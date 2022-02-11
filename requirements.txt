@@ -90,7 +90,7 @@ textmagic==2.0.3
 tldextract==2.1.0
 tweepy==3.5.0
 twilio==6.8.3
-Twisted==17.5.0
+Twisted==22.1.0
 twython==3.6.0
 update-checker==0.16
 uritemplate==3.0.0
