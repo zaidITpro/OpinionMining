@@ -43,7 +43,7 @@ olefile==0.44
 pandas==0.20.3
 parsel==1.2.0
 pefile==2017.9.3
-Pillow==4.2.1
+Pillow==9.3.0
 ply==3.10
 post==0.0.13
 praw==5.2.0
